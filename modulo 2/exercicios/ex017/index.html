@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            /*
+            Medidas absolutas:
+            cm, mm, px, in(varia a medida dependendo do dispositivo), 
+            pt, pc.(são medidas de tipografia(papel) e não é recomendado usa-las em material expresso em tela)
+            
+            Medidas relativas:
+            em, - medida relativa ao tamanho da fonte(relativo ao M maiusculo de uma fonte)
+            ex, - medida relativa a altura x de uma fonte
+            rem, - é tipo o em, mas é relativo ao root(a fonte que está configurada no body)
+            vw, - medida relativa a largura da viewport(tamanho da tela de um dispositivo)
+            vh - medida relativa a altura da viewport
+            e a %(porcentagem).
+
+            o W3C recomenda usar as medidas em e px.
+            */
+            font-size: 2em;
+            /*16px é o tamanho padrão de uma fonte.
+              16px equivale a 1em.
+            */
+            font-weight: bolder;
+            /*weight é peso, width é largura, height é altura*/
+            /*temos alguns pesos literais como o lighter que é mais magrinho, normal, bold e o bolder e númerica de 100 - 900*/
+            font-style: italic;
+            /*a fonte escolhida tem que ter essas três configuracões*/
+        }
+
+        h1 {
+            /*shorthand font
+              - font-style -> font-weight -> font-size -> font-family(tem que seguir essa ordem).
+
+             font-family: sans-serif;
+             font-weight: bold;
+             font-size: 3em;
+             font-style: italic;
+            */
+            font: italic bolder 3em sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat impedit dicta dolorum perferendis vitae omnis quia similique quasi dolorem voluptatum. Quia laboriosam mollitia, quibusdam praesentium culpa magnam sint ab animi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quidem modi distinctio ex? Tempore odit beatae eos quis molestias magnam, sed iste rem veritatis ratione vero quidem voluptatem officiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic quis nulla dolor consequatur fugit officia ratione porro cumque recusandae minima laborum nostrum cupiditate, iure error similique vero et eos nemo?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus modi illum a nostrum non, nemo tempore voluptatem, voluptates animi recusandae vero asperiores at eveniet maiores facilis dolorum inventore repellendus deleniti?</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellendus minima molestias minus possimus error distinctio alias eum ea saepe iusto eius illo, adipisci laudantium itaque numquam. Nihil, in tempora?</p>
+</body>
+</html>
