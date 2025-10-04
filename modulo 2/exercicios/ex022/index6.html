@@ -3,19 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;*/
              /*
                 container - faz a imagem ocupar 100% da tela, mas vai adaptar o tamanho da tela sem corta.
                 cover - faz a imagem ocupar 100% da tela, mas vai fazer cortes na imagem para adaptar.
             */
-            background-repeat: repeat;
+            /*
+                background-attachment: fixed - a imagem vai ficar fixa, é interessante combar com cover.
+                background-attachment: scroll - a imagem vai rolar junto com o conteudo.
+            */
+
+            /*
+                shorthand - background
+                Color > image > position > [size] > attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center/cover fixed;
+            /* 
+                é preciso colocar / antes do size para funcionar o shorthand.
+            */
+
         }
 
         main {
