@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*
+    Até 599px: Smartphones (retrato)
+    600px–899px: Tablets (retrato), telefones pequenos (paisagem)
+    900px–1199px: Tablets (paisagem), laptops pequenos
+    1200px–1599px: Desktops e laptops padrão
+    Resolução de 1600px ou superior: Telas widescreen, monitores 4K
+*/
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #celular {display: none;}
+
+    #tablet { display: none;}
+
+    #impressora { display: block;}
+
+    #pc {display: none;}
+
+    #TV {display: none;}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #celular {display: none;}
+
+    #tablet { display: block;}
+
+    #impressora { display: none;}
+
+    #pc {display: none;}
+
+    #TV {display: none;}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #celular {display: none;}
+
+    #tablet { display: none;}
+
+    #impressora { display: none;}
+
+    #pc {display: block;}
+
+    #TV {display: none;}
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #celular {display: none;}
+
+    #tablet { display: none;}
+
+    #impressora { display: none;}
+
+    #pc {display: none;}
+
+    #TV {display: block;}
+}
