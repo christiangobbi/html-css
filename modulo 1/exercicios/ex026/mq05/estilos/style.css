@@ -11,7 +11,7 @@ body, html {
 }
 
 header {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(110, 110, 110);
 }
 
 header > h1 {
@@ -19,8 +19,21 @@ header > h1 {
     text-align: center;
 }
 
-nav {
+#burguer {
     display: block;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 10px;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
 }
 
 nav > ul {
